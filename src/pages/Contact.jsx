@@ -15,7 +15,7 @@ import Magnetic from '../components/Magnetic'
 import LocalTime from '../components/LocalTime'
 import Icon from '../components/Icon'
 
-// ضعي هنا رابط Formspree بعد إنشاء النموذج
+
 const FORM_ENDPOINT = 'https://formspree.io/f/xljbjeaq'
 
 const quote = {

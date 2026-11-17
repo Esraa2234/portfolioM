@@ -9,11 +9,11 @@ import Icon from '../components/Icon'
 // import style from '../styles/global.css'
 import '../styles/global.css'
 export default function About() {
-  // const { lang, t, tx, num } = useLanguage()
+
   const { lang, t, tx } = useLanguage()
   const story = t('about.story')
   const F = t('about.facts')
-  // const totalHours = training.reduce((s, c) => s + c.hours, 0)
+
 
   const facts = [
     { k: F.based, v: tx(profile.location) },

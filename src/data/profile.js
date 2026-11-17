@@ -3,7 +3,7 @@
 // Rendered across the site (hero, about, contact, footer, resume).
 
 export const profile = {
-  photo: '/public/portfolio/mm.jpeg',
+  photo: '/public/images/mm.jpeg',
   initials: 'MY',
 
   name: {
