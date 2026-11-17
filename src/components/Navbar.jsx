@@ -8,7 +8,7 @@ import LanguageSwitcher from './LanguageSwitcher'
 import Icon from './Icon'
 import RollText from './RollText'
 
-const links = ['about', 'projects', 'skills', 'resume', 'contact']
+const links = ['about', 'projects', 'skills',  'contact']
 
 export default function Navbar() {
   const { t, tx, to, num } = useLanguage()
@@ -51,8 +51,8 @@ export default function Navbar() {
         <div className="nav-inner">
           <Link to={to()} className="nav-brand" aria-label={t('brand')}>
             <span className="nav-mark">
-              <span>E</span>
               <span>M</span>
+              <span>Y</span>
             </span>
             <span className="nav-brand-name">{t('brand')}</span>
           </Link>

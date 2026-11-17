@@ -6,12 +6,14 @@ import Reveal from '../components/Reveal'
 import SplitWords from '../components/SplitWords'
 import CtaBlock from '../components/CtaBlock'
 import Icon from '../components/Icon'
-
+// import style from '../styles/global.css'
+import '../styles/global.css'
 export default function About() {
-  const { lang, t, tx, num } = useLanguage()
+  // const { lang, t, tx, num } = useLanguage()
+  const { lang, t, tx } = useLanguage()
   const story = t('about.story')
   const F = t('about.facts')
-  const totalHours = training.reduce((s, c) => s + c.hours, 0)
+  // const totalHours = training.reduce((s, c) => s + c.hours, 0)
 
   const facts = [
     { k: F.based, v: tx(profile.location) },
@@ -119,23 +121,52 @@ export default function About() {
           </ul>
         </div>
 
-        <div>
-          <SplitWords as="h2" className="section-title is-sm" text={t('about.training')} />
-          <ul className="courses">
-            {training.map((c, i) => (
-              <Reveal as="li" key={i} delay={i * 50} variant="fade">
-                <span className="courses-year">{tx(c.year)}</span>
-                <span className="courses-title" dir="ltr">{c.title}</span>
-                <span className="courses-meta">
-                  {tx(c.provider)} · {num(c.hours)} {t('resume.hours')}
-                </span>
-              </Reveal>
-            ))}
-          </ul>
-          <p className="courses-total">
-            <strong>{num(totalHours)}</strong> {t('about.trainingTotal')}
-          </p>
+
+<div>
+
+
+<div className="growth-section">
+  <SplitWords
+    as="h2"
+    className="section-title is-sm"
+    text={lang === 'ar' ? 'التطور التقني' : 'Technical Growth'}
+  />
+
+  <div className="growth-list">
+    {training.map((item, i) => (
+      <Reveal
+        key={item.key}
+        delay={i * 70}
+        variant="fade"
+        className="growth-card"
+      >
+        <div className="growth-heading">
+          <span className="growth-number">
+            {String(i + 1).padStart(2, '0')}
+          </span>
+
+          <h3>{item.title[lang]}</h3>
         </div>
+
+        <p className="growth-description">
+          {item.description[lang]}
+        </p>
+
+        <div className="chips growth-chips" dir="ltr">
+          {item.tech.map((tech) => (
+            <span className="chip" key={tech}>
+              {tech}
+            </span>
+          ))}
+        </div>
+      </Reveal>
+    ))}
+  </div>
+</div>
+
+
+</div>
+
       </section>
 
       <CtaBlock />

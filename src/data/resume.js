@@ -1,289 +1,348 @@
+
+// Resume data for Mahmoud Yosary.
+// Used by About, Skills, Resume and Home timeline.
+
 import { projects } from './projects'
 
-// CV content, kept in step with the final PDFs (EN / DE / FA, Oct 2026).
-// Used by the About, Skills and Resume pages and the home page timeline.
-
+// Verified statistics from Mahmoud's CV.
 export const stats = [
-  { value: 5, suffix: '+', label: { fa: 'سال سابقه‌ی کار حرفه‌ای', en: 'years of professional work', de: 'Jahre Berufserfahrung' } },
-  { value: 15, suffix: '+', label: { fa: 'ماژول ERP طراحی و پیاده‌سازی‌شده', en: 'ERP modules delivered', de: 'umgesetzte ERP-Module' } },
-  { value: projects.length, suffix: '', label: { fa: 'پروژه‌ی تحویل‌شده', en: 'shipped projects', de: 'ausgelieferte Projekte' } },
-  { value: 420, suffix: '', label: { fa: 'ساعت دوره‌ی تخصصی', en: 'hours of training', de: 'Stunden Weiterbildung' } },
+  {
+    value: 6,
+    suffix: '+',
+    label: {
+      ar: 'تطبيقات ويب تم تطويرها',
+      en: 'web applications developed',
+    },
+  },
+  {
+    value: 90,
+    suffix: '%+',
+    label: {
+      ar: 'نتيجة Lighthouse للأداء في عدة مشاريع',
+      en: 'Lighthouse performance score on multiple projects',
+    },
+  },
+  {
+    value: projects.length,
+    suffix: '',
+    label: {
+      ar: 'مشروع معروض',
+      en: 'featured projects',
+    },
+  },
 ]
 
+// Professional experience.
 export const experience = [
   {
-    key: 'alvan',
+    key: 'frontend-developer',
     current: true,
-    period: { fa: 'مرداد ۱۴۰۱ تا امروز', en: 'Jul 2022 – present', de: '07/2022 – heute' },
-    role: {
-      fa: 'توسعه‌دهنده‌ی نرم‌افزار و کارشناس پایگاه داده',
-      en: 'Software Developer & Database Specialist',
-      de: 'Softwareentwickler & Datenbank-Spezialist',
+
+    period: {
+      ar: 'مايو 2025 – حتى الآن',
+      en: 'May 2025 – Present',
     },
+
+    role: {
+      ar: 'مطور واجهات أمامية – تدريب ومشاريع شخصية',
+      en: 'Frontend Developer Intern / Personal Projects',
+    },
+
     org: {
-      fa: 'رنگ و رزین الوان، تهران',
-      en: 'Alvan Paint & Resin, Tehran',
-      de: 'Alvan Paint & Resin, Teheran',
+      ar: 'مشاريع ذاتية وتدريب أونلاين – القاهرة (عن بُعد)',
+      en: 'Self-Initiated Projects & Online Training – Cairo (Remote)',
     },
+
     note: {
-      fa: 'تولیدکننده‌ی رنگ و رزین',
-      en: 'Manufacturer of paints and resins',
-      de: 'Hersteller von Farben und Harzen',
+      ar: 'تطوير تطبيقات ومواقع ويب باستخدام تقنيات Frontend',
+      en: 'Web development and frontend training',
     },
+
     bullets: {
-      fa: [
-        'توسعه و نگهداری نرم‌افزارهای سازمانی شرکت که فرایندهای حوزه‌های مالی، بازرگانی، زنجیره‌ی تأمین، کیفیت، فنی و منابع انسانی را به‌صورت یکپارچه پوشش می‌دهند.',
-        'تحلیل نیازمندی‌ها در تعامل مستقیم با مدیران و کاربران واحدها و تبدیل فرایندهای کسب‌وکار به مدل داده و نرم‌افزار.',
-        'طراحی و بهینه‌سازی پایگاه‌های داده‌ی Microsoft SQL Server: مدل‌سازی جداول و روابط، Stored Procedure، View، Function و کوئری‌های پیچیده‌ی T-SQL.',
-        'بهبود کارایی سیستم با تحلیل Execution Plan، اصلاح ایندکس‌ها و بازنویسی کوئری‌های سنگین.',
-        'توسعه‌ی سرویس‌های بک‌اند و REST API و بهبود رابط‌های کاربری وب.',
-        'طراحی گزارش‌های مدیریتی و عملیاتی با Stimulsoft و Crystal Reports.',
-        'راه‌اندازی محیط‌های توسعه و اجرا با Docker و مدیریت نسخه با Git.',
-        'پشتیبان‌گیری، بازیابی و پایش پایگاه داده، مستندسازی فنی، بازبینی کد و رفع اشکال.',
+      ar: [
+        'تطوير أكثر من 6 تطبيقات ويب متجاوبة باستخدام HTML5 وCSS3 وJavaScript (ES6+) وReact.js.',
+        'تحويل تصميمات UI/UX إلى واجهات نظيفة ومنظمة وتفاعلية وسهلة الاستخدام.',
+        'التعامل مع REST APIs لجلب البيانات وإدارتها وعرضها، مع معالجة الأخطاء وحالات التحميل.',
+        'تحسين أداء المواقع وتحقيق نتائج Lighthouse Performance Score تتجاوز 90% في عدة مشاريع.',
+        'استخدام Git وGitHub لإدارة إصدارات الكود وتنظيم العمل والتعاون.',
+        'تحسين توافق المواقع مع المتصفحات المختلفة وتطبيق أساسيات Accessibility وARIA وSemantic HTML.',
       ],
+
       en: [
-        'Develop and maintain the company’s in-house business software, covering finance, sales and purchasing, supply chain, quality, engineering and HR processes in one integrated system.',
-        'Gather requirements directly with department managers and users and turn business processes into data models and software.',
-        'Design and optimise Microsoft SQL Server databases: tables and relationships, stored procedures, views, functions and complex T-SQL.',
-        'Performance tuning: reading execution plans, fixing indexes and rewriting slow queries to cut processing time.',
-        'Build backend services and REST APIs and improve the web interfaces on top of them.',
-        'Design management and operational reports with Stimulsoft and Crystal Reports.',
-        'Set up development and runtime environments with Docker; version control with Git.',
-        'Database backup, restore, monitoring and maintenance; technical documentation, code reviews and troubleshooting.',
-      ],
-      de: [
-        'Entwicklung und Betreuung der unternehmensinternen Business-Software, die Prozesse aus Finanzen, Vertrieb und Einkauf, Supply Chain, Qualität, Technik und Personal in einem integrierten System abbildet.',
-        'Anforderungsanalyse direkt mit Abteilungsleitern und Anwendern und Umsetzung der Geschäftsprozesse in Datenmodelle und Software.',
-        'Entwurf und Optimierung von Microsoft-SQL-Server-Datenbanken: Tabellen und Beziehungen, Stored Procedures, Views, Functions und komplexe T-SQL-Abfragen.',
-        'Performance-Tuning: Execution Plans lesen, Indizes optimieren und langsame Abfragen umschreiben.',
-        'Entwicklung von Backend-Services und REST-APIs sowie Weiterentwicklung der Weboberflächen.',
-        'Erstellung von Management- und Betriebsberichten mit Stimulsoft und Crystal Reports.',
-        'Entwicklungs- und Laufzeitumgebungen mit Docker; Versionskontrolle mit Git.',
-        'Backup, Restore, Monitoring und Wartung der Datenbanken; technische Dokumentation, Code-Reviews und Fehlerbehebung.',
+        'Developed 6+ responsive web applications using HTML5, CSS3, JavaScript (ES6+), and React.js.',
+        'Translated UI/UX designs into clean, maintainable, and interactive user interfaces.',
+        'Integrated REST APIs to fetch, manage, and display dynamic data with proper error handling and loading states.',
+        'Improved website performance, achieving 90%+ Lighthouse performance scores on multiple projects.',
+        'Applied Git and GitHub for version control, branching, and collaborative workflow management.',
+        'Ensured cross-browser compatibility and implemented accessibility best practices, including ARIA and semantic HTML.',
       ],
     },
-    tech: ['Python', 'Django', 'VB.NET', 'JavaScript', 'React', 'SQL Server', 'T-SQL', 'Docker', 'Git', 'Stimulsoft', 'Crystal Reports'],
-  },
-  {
-    key: 'houshiva',
-    current: true,
-    period: { fa: '۱۴۰۵ تا امروز', en: '2026 – present', de: '2026 – heute' },
-    role: {
-      fa: 'بنیان‌گذار و توسعه‌دهنده (پاره‌وقت)',
-      en: 'Founder & Software Developer (part-time)',
-      de: 'Gründer & Softwareentwickler (nebenberuflich)',
-    },
-    org: { fa: 'هوشیوا، تهران', en: 'Houshiva, Tehran', de: 'Houshiva, Teheran' },
-    note: {
-      fa: 'استودیوی نرم‌افزار اختصاصی برای کسب‌وکارها',
-      en: 'Software studio for custom business applications',
-      de: 'Softwarestudio für individuelle Business-Software',
-    },
-    link: 'https://houshiva.ir',
-    bullets: {
-      fa: [
-        'برای کسب‌وکارهای کوچک و متوسط نرم‌افزار اختصاصی می‌سازم: سایت، فروشگاه آنلاین، صندوق فروش، CRM، انبار و حسابداری، داشبورد و اتصال API؛ از بررسی نیاز تا استقرار و پشتیبانی.',
-        'چند نمونه: بازسازی سایت یک شرکت از وردپرس به React و Django، پلتفرم سفارش و رزرو میز برای یک کافه با ورود پیامکی، و منوی دیجیتال با پنل مدیریت و سفارش آنلاین.',
-      ],
-      en: [
-        'Custom software for small and mid-sized businesses: websites, online shops, POS, CRM, inventory and accounting systems, dashboards and API integrations, from requirements to deployment and support.',
-        'A few references: relaunching a company website from WordPress to React + Django, an ordering and table-booking platform for a café with SMS one-time-password login, and a digital menu with admin panel and online ordering.',
-      ],
-      de: [
-        'Individuelle Software für kleine und mittlere Unternehmen: Websites, Onlineshops, Kassensysteme, CRM, Lager- und Buchhaltungssysteme, Dashboards und API-Integrationen, von der Anforderungsanalyse bis zu Deployment und Support.',
-        'Referenzen: Relaunch einer Firmenwebsite von WordPress auf React + Django, eine Bestell- und Reservierungsplattform für ein Café mit SMS-OTP-Login und eine digitale Speisekarte mit Admin-Panel und Online-Bestellung.',
-      ],
-    },
-  },
-  {
-    key: 'training',
-    period: { fa: 'تیر ۱۳۹۹ تا خرداد ۱۴۰۱', en: 'Jul 2020 – Jun 2022', de: '07/2020 – 06/2022' },
-    role: {
-      fa: 'دوره‌های تخصصی و پروژه‌های شخصی',
-      en: 'Professional training & own projects',
-      de: 'Fachliche Weiterbildung & eigene Projekte',
-    },
-    org: { fa: 'تهران', en: 'Tehran', de: 'Teheran' },
-    bullets: {
-      fa: [
-        'بیش از ۳۵۰ ساعت دوره‌ی تخصصی گذراندم: SQL Server، بهینه‌سازی عملکرد، هوش تجاری، Power BI و پایتون.',
-        'پروژه‌های شخصی: بانک رزومه با Django و React و سامانه‌ی ثبت حوادث شرکتی (۱۴۰۰).',
-      ],
-      en: [
-        'Focused on databases and Python: 350+ hours of training in SQL Server, performance tuning, business intelligence, Power BI and Python.',
-        'Own projects: a CV database with Django + React and an incident reporting system (2021).',
-      ],
-      de: [
-        'Gezielte Spezialisierung auf Datenbanken und Python: über 350 Stunden Weiterbildung zu SQL Server, Performance-Tuning, Business Intelligence, Power BI und Python.',
-        'Eigene Projekte: eine Lebenslauf-Datenbank mit Django + React und ein System zur Erfassung von Betriebsvorfällen (2021).',
-      ],
-    },
-  },
-  {
-    key: 'service',
-    period: { fa: 'خرداد ۱۳۹۷ تا خرداد ۱۳۹۹', en: 'Jun 2018 – Jun 2020', de: '06/2018 – 06/2020' },
-    role: {
-      fa: 'خدمت سربازی (پایان‌یافته)',
-      en: 'Military service (mandatory, completed)',
-      de: 'Wehrdienst (Wehrpflicht, abgeschlossen)',
-    },
-    org: { fa: 'ایران', en: 'Iran', de: 'Iran' },
-    bullets: {
-      fa: ['در کنار خدمت، سایت فروشگاه حیوانات خانگی را ساختم (۱۳۹۸).'],
-      en: ['Alongside service: built a pet supplies web shop (2019).'],
-      de: ['Nebenbei eigenes Projekt: Onlineshop für Tierbedarf (2019).'],
-    },
-  },
-  {
-    key: 'self-study',
-    period: { fa: 'تیر ۱۳۹۶ تا اردیبهشت ۱۳۹۷', en: 'Jul 2017 – May 2018', de: '07/2017 – 05/2018' },
-    role: {
-      fa: 'یادگیری مستقل تا اعزام به خدمت',
-      en: 'Self-study until military call-up',
-      de: 'Selbststudium bis zur Einberufung',
-    },
-    org: { fa: 'تهران', en: 'Tehran', de: 'Teheran' },
-    bullets: {
-      fa: ['درس‌های دانشگاه را عمیق‌تر خواندم: برنامه‌نویسی، پایگاه داده و توسعه‌ی وب.'],
-      en: ['Went deeper into my university courses: programming, databases and web development.'],
-      de: ['Vertiefung der Studieninhalte: Programmierung, Datenbanken und Webentwicklung.'],
-    },
+
+    tech: [
+      'HTML5',
+      'CSS3',
+      'JavaScript (ES6+)',
+      'React.js',
+      'REST APIs',
+      'Git',
+      'GitHub',
+      'ARIA',
+      'Semantic HTML',
+    ],
   },
 ]
 
+// Education.
 export const education = [
   {
-    period: { fa: '۱۴۰۵ تا امروز', en: 'Sep 2026 – present', de: '09/2026 – heute' },
+    key: 'web-development-diploma',
+
+    period: {
+      ar: 'أغسطس 2025',
+      en: 'August 2025',
+    },
+
     degree: {
-      fa: 'کارشناسی مهندسی کامپیوتر - نرم‌افزار',
-      en: 'Bachelor’s degree in Web Programming',
-      de: 'Bachelorstudium Web-Programmierung',
+      ar: 'دبلومة تطوير الويب',
+      en: 'Diploma in Web Development',
     },
+
     school: {
-      fa: 'موسسه‌ی آموزش عالی علمی‌کاربردی گسترش انفورماتیک ایران',
-      en: 'Gostaresh Informatics Iran, University of Applied Science and Technology',
-      de: 'Gostaresh Informatics Iran, Hochschule für angewandte Wissenschaften',
+      ar: 'El Academy Bravo – الزقازيق، مصر',
+      en: 'El Academy Bravo – Zagazig, Egypt',
     },
+
     note: {
-      fa: 'هم‌زمان با کار، در حال تحصیل',
-      en: 'Part-time alongside work, expected 2028',
-      de: 'Berufsbegleitend, Abschluss voraussichtlich 2028',
+      ar: 'دبلومة مكثفة في تطوير الويب Full Stack، شملت تقنيات Frontend وBackend.',
+      en: 'Intensive Full Stack Web Development diploma covering frontend and backend technologies.',
+    },
+
+    bullets: {
+      ar: [
+        'تطبيق عملي على HTML وCSS وJavaScript وReact.js.',
+        'دراسة أساسيات تطوير Backend وتطوير الخوادم وقواعد البيانات وREST APIs.',
+        'تنفيذ مشاريع عملية باستخدام تقنيات تطوير الويب الحديثة وإدارة إصدارات الكود.',
+      ],
+
+      en: [
+        'Gained hands-on experience building responsive user interfaces using HTML, CSS, JavaScript, and React.js.',
+        'Studied backend fundamentals, including server-side development, databases, and REST API integration.',
+        'Developed multiple real-world projects using modern development practices and Git version control.',
+      ],
     },
   },
+
   {
-    period: { fa: '۱۳۹۴ تا ۱۳۹۶', en: '2015 – 2017', de: '2015 – 2017' },
+    key: 'bachelor-mis',
+
+    period: {
+      ar: 'يونيو 2025',
+      en: 'June 2025',
+    },
+
     degree: {
-      fa: 'کاردانی نرم‌افزار کامپیوتر',
-      en: 'Kārdāni (2-year degree, comparable to an Associate Degree) in Computer Software',
-      de: 'Kārdāni (2-jähriger Hochschulabschluss, vergleichbar Associate Degree) in Computer-Software',
+      ar: 'بكالوريوس نظم معلومات إدارية',
+      en: "Bachelor's Degree in Management Information Systems",
     },
+
     school: {
-      fa: 'آموزشکده‌ی فنی دولتی امام صادق (ع)',
-      en: 'Imam Sadegh Technical College (state)',
-      de: 'Staatliche Technische Hochschule Imam Sadegh',
+      ar: 'معهد الدلتا العالي لنظم المعلومات الإدارية – المنصورة، مصر',
+      en: 'Delta Higher Institute for Management Information Systems – Mansoura, Egypt',
     },
-    note: {
-      fa: 'پذیرش از طریق کنکور سراسری، دوره‌ی روزانه‌ی دولتی',
-      en: 'Admitted through the national university entrance exam (Konkur), full-time state programme',
-      de: 'Zulassung über die landesweite Hochschulaufnahmeprüfung (Konkur), staatliches Vollzeitstudium',
+
+    bullets: {
+      ar: [
+        'دراسة مفاهيم نظم المعلومات وقواعد البيانات وحلول تكنولوجيا الأعمال.',
+        'تنفيذ مشاريع عملية في تطوير الويب باستخدام HTML وCSS وJavaScript وPHP وLaravel وMySQL.',
+        'تنمية مهارات التحليل وحل المشكلات وتصميم الأنظمة.',
+      ],
+
+      en: [
+        'Studied core concepts of information systems, databases, and business technology solutions.',
+        'Completed practical web development projects using HTML, CSS, JavaScript, PHP, Laravel, and MySQL.',
+        'Strengthened analytical, problem-solving, and system design skills.',
+      ],
     },
   },
+
   {
-    period: { fa: '۱۳۹۱ تا ۱۳۹۴', en: '2012 – 2015', de: '2012 – 2015' },
-    degree: {
-      fa: 'دیپلم کامپیوتر (هنرستان فنی)',
-      en: 'High school diploma in Computer Science (technical track)',
-      de: 'Diplom, Fachrichtung Informatik (berufsbildender Zweig)',
+    key: 'full-stack-diploma',
+
+    period: {
+      ar: 'أكتوبر 2024',
+      en: 'October 2024',
     },
+
+    degree: {
+      ar: 'دبلومة تطوير Full Stack Web Development',
+      en: 'Diploma in Full Stack Web Development',
+    },
+
     school: {
-      fa: 'هنرستان نمونه‌دولتی شهید نصیرزاده (با آزمون ورودی)',
-      en: 'Shahid Nasirzadeh, selective state model school (entrance exam)',
-      de: 'Honarestan Shahid Nasirzadeh, staatliche Modellschule mit Aufnahmeprüfung',
+      ar: 'Creativo Academy – المنصورة، مصر',
+      en: 'Creativo Academy – Mansoura, Egypt',
+    },
+
+    bullets: {
+      ar: [
+        'إتمام دبلومة متكاملة في تطوير الويب Full Stack شملت تقنيات Frontend وBackend.',
+        'إنشاء واجهات مستخدم تفاعلية باستخدام HTML5 وCSS3 وJavaScript وVue.js.',
+        'تطوير تطبيقات Backend باستخدام PHP وMySQL، بما يشمل التعامل مع قواعد البيانات ومنطق العمل على الخادم.',
+        'تطبيق ممارسات تطوير الويب الحديثة وإدارة إصدارات الكود باستخدام Git وGitHub في المشاريع العملية.',
+      ],
+
+      en: [
+        'Completed a Full Stack Web Development diploma covering frontend and backend technologies.',
+        'Built interactive user interfaces using HTML5, CSS3, JavaScript, and Vue.js.',
+        'Developed backend applications using PHP and MySQL, including database integration and server-side logic.',
+        'Applied modern development practices and version control using Git/GitHub in practical projects.',
+      ],
     },
   },
 ]
 
-export const training = [
-  { year: { fa: '۱۴۰۴', en: '2025', de: '2025' }, title: 'AI Engineering', provider: 'Neo Learn', hours: 30 },
-  { year: { fa: '۱۴۰۲', en: '2023', de: '2023' }, title: 'Data Analysis', provider: { fa: 'مجتمع فنی تهران', en: 'Tehran Technical Complex', de: 'Tehran Technical Complex' }, hours: 30 },
-  { year: { fa: '۱۴۰۰', en: '2021', de: '2021' }, title: 'SQL Server Performance & Tuning', provider: { fa: 'نیک‌آموز', en: 'Nikamooz', de: 'Nikamooz' }, hours: 75 },
-  { year: { fa: '۱۴۰۰', en: '2021', de: '2021' }, title: 'Power BI Desktop', provider: { fa: 'نیک‌آموز', en: 'Nikamooz', de: 'Nikamooz' }, hours: 30 },
-  { year: { fa: '۱۴۰۰', en: '2021', de: '2021' }, title: 'Python Programming', provider: { fa: 'مجتمع فنی تهران', en: 'Tehran Technical Complex', de: 'Tehran Technical Complex' }, hours: 60 },
-  { year: { fa: '۱۴۰۰', en: '2021', de: '2021' }, title: 'Advanced Python', provider: { fa: 'نیک‌آموز', en: 'Nikamooz', de: 'Nikamooz' }, hours: 30 },
-  { year: { fa: '۱۳۹۹', en: '2020', de: '2020' }, title: 'Business Intelligence', provider: { fa: 'نیک‌آموز', en: 'Nikamooz', de: 'Nikamooz' }, hours: 90 },
-  { year: { fa: '۱۳۹۹', en: '2020', de: '2020' }, title: 'SQL Server Querying', provider: { fa: 'نیک‌آموز', en: 'Nikamooz', de: 'Nikamooz' }, hours: 45 },
-  { year: { fa: '۱۳۹۹', en: '2020', de: '2020' }, title: 'Advanced T-SQL: Window Functions & Columnstore Index', provider: { fa: 'نیک‌آموز', en: 'Nikamooz', de: 'Nikamooz' }, hours: 30 },
-]
+// Technical skills.
+// Skill levels are intentionally omitted because the CV does not specify them.
 
-// Levels: 3 = advanced, 2 = good, 1 = basic (as in the CV).
+
 export const skillGroups = [
-  {
-    key: 'backend',
-    items: [
-      { name: 'Python', level: 3 },
-      { name: 'Django', level: 3 },
-      { name: 'REST APIs', level: 3 },
-      { name: 'VB.NET', level: 2 },
-    ],
-  },
-  {
-    key: 'database',
-    items: [
-      { name: 'MS SQL Server', level: 3 },
-      { name: 'T-SQL', level: 3 },
-      { name: 'PostgreSQL', level: 3 },
-      { name: 'MySQL', level: 3 },
-      { name: 'SSIS', level: 1 },
-    ],
-  },
   {
     key: 'frontend',
     items: [
-      { name: 'React', level: 2 },
-      { name: 'JavaScript', level: 2 },
-      { name: 'HTML / CSS', level: 2 },
-      { name: 'TypeScript', level: 1 },
+      { name: 'HTML5', level: 3 },
+      { name: 'CSS3', level: 3 },
+      { name: 'JavaScript (ES6+)', level: 3 },
+      { name: 'React.js', level: 2 },
+      { name: 'Responsive Web Design', level: 3 },
+      { name: 'CSS Flexbox & Grid', level: 3 },
+      { name: 'DOM Manipulation', level: 3 },
+      { name: 'UI/UX Implementation', level: 2 },
+      { name: 'Cross-Browser Compatibility', level: 2 },
     ],
   },
   {
     key: 'devops',
     items: [
-      { name: 'Git', level: 3 },
-      { name: 'Docker', level: 2 },
-      { name: 'GitLab', level: 2 },
-    ],
-  },
-  {
-    key: 'bi',
-    items: [
-      { name: 'Crystal Reports', level: 3 },
-      { name: 'Stimulsoft Reports', level: 2 },
-      { name: 'Power BI', level: 2 },
-      { name: 'Excel', level: 2 },
-      { name: 'Access', level: 2 },
+      { name: 'Git & GitHub', level: 2 },
+      { name: 'Version Control', level: 2 },
+      { name: 'VS Code', level: 3 },
+      { name: 'Chrome Developer Tools', level: 3 },
+      { name: 'npm (Basic)', level: 2 },
     ],
   },
   {
     key: 'other',
     items: [
-      { name: 'Claude / Codex', level: 2 },
+      { name: 'REST API Integration', level: 2 },
+      { name: 'Web Performance Optimization', level: 2 },
+      { name: 'Accessibility Basics', level: 2 },
+      { name: 'ARIA', level: 1 },
+      { name: 'Semantic HTML', level: 3 },
     ],
   },
 ]
 
+
+// Languages.
 export const languages = [
-  { name: { fa: 'فارسی', en: 'Persian', de: 'Persisch' }, level: { fa: 'زبان مادری', en: 'Native', de: 'Muttersprache' }, value: 100 },
-  { name: { fa: 'انگلیسی', en: 'English', de: 'Englisch' }, level: { fa: 'خوب (سطح B)، مسلط در ارتباط فنی', en: 'Good (B level), confident in technical communication', de: 'Gute Kenntnisse (B-Niveau), sicher in technischer Kommunikation' }, value: 70 },
-  { name: { fa: 'آلمانی', en: 'German', de: 'Deutsch' }, level: { fa: 'مقدماتی (A2)', en: 'Basic (A2)', de: 'Grundkenntnisse (A2)' }, value: 35 },
+  {
+    name: {
+      ar: 'العربية',
+      en: 'Arabic',
+    },
+
+    level: {
+      ar: 'اللغة الأم',
+      en: 'Native',
+    },
+  },
+
+  {
+    name: {
+      ar: 'الإنجليزية',
+      en: 'English',
+    },
+
+    level: {
+      ar: 'إجادة مهنية في العمل',
+      en: 'Professional Working Proficiency',
+    },
+  },
 ]
 
-// "Selected projects" as listed in the CV, including the two that are not
-// on the portfolio page (AI assistant, asset valuation).
-export const cvProjects = [
-  { year: { fa: '۱۴۰۵', en: '2026', de: '2026' }, title: { fa: 'داشبورد مدیریتی و تحلیل عملکرد سازمان', en: 'Management dashboard & performance analytics', de: 'Management-Dashboard & Unternehmensanalyse' }, slug: 'management-dashboard-analytics' },
-  { year: { fa: '۱۴۰۵', en: '2026', de: '2026' }, title: { fa: 'هوش بازار؛ مقایسه‌ی قیمت کالا در بازارهای مختلف', en: 'Market intelligence tool: comparing product prices across markets', de: 'Marktanalyse-Tool: Vergleich von Warenpreisen über Märkte hinweg' }, slug: 'market-intelligence-platform' },
-  { year: { fa: '۱۴۰۵', en: '2026', de: '2026' }, title: { fa: 'دستیار هوش مصنوعی مبتنی بر مدل‌های زبانی بزرگ', en: 'AI assistant built on large language models', de: 'KI-Assistent auf Basis großer Sprachmodelle' } },
-  { year: { fa: '۱۴۰۴', en: '2025', de: '2025' }, title: { fa: 'سیستم هوشمند استعلام قیمت کالا و ارزش‌گذاری اموال', en: 'Smart price inquiry & asset valuation system (Django, React, SQL Server)', de: 'Intelligentes Preisanfrage- & Vermögensbewertungssystem (Django, React, SQL Server)' } },
-  { year: { fa: '۱۴۰۳', en: '2024', de: '2024' }, title: { fa: 'سیستم مدیریت مستندات هوشمند سازمانی', en: 'Smart document management system', de: 'Intelligentes Dokumentenmanagementsystem' }, slug: 'document-management' },
-  { year: { fa: '۱۴۰۲', en: '2023', de: '2023' }, title: { fa: 'سیستم مدیریت آموزشگاه زبان و بانک آموزش ویدیویی اشتراکی', en: 'Language school management system with a subscription video platform', de: 'Sprachschul-Managementsystem mit Video-Lernplattform im Abo' }, slug: 'avana-language-academy' },
+// Project names and details are not yet available in the supplied CV.
+export const cvProjects = []
+
+// No separate training courses were listed in the supplied CV.
+// Education diplomas are already displayed in the Education section.
+// export const training = []
+
+// Technical Growth.
+// Key technical areas Mahmoud has developed through learning and practice.
+export const training = [
+  {
+    key: 'frontend-development',
+    title: {
+      ar: 'تطوير الواجهات الأمامية',
+      en: 'Modern Frontend Development',
+    },
+    description: {
+      ar: 'تطوير واجهات ويب حديثة وتفاعلية باستخدام HTML وCSS وJavaScript وReact.',
+      en: 'Building modern and interactive web interfaces using HTML, CSS, JavaScript, and React.',
+    },
+    tech: ['HTML5', 'CSS3', 'JavaScript', 'React.js'],
+  },
+
+  {
+    key: 'responsive-design',
+    title: {
+      ar: 'تصميم واجهات متجاوبة',
+      en: 'Responsive UI Development',
+    },
+    description: {
+      ar: 'إنشاء واجهات متوافقة مع مختلف أحجام الشاشات والأجهزة.',
+      en: 'Creating user interfaces that adapt to different screen sizes and devices.',
+    },
+    tech: ['Responsive Design', 'Flexbox', 'CSS Grid'],
+  },
+
+  {
+    key: 'api-integration',
+    title: {
+      ar: 'التعامل مع واجهات البرمجة',
+      en: 'API Integration',
+    },
+    description: {
+      ar: 'ربط تطبيقات الويب بمصادر البيانات والتعامل مع REST APIs وعرض البيانات الديناميكية.',
+      en: 'Connecting web applications to data sources and working with REST APIs and dynamic data.',
+    },
+    tech: ['REST APIs', 'JSON', 'JavaScript'],
+  },
+
+  {
+    key: 'performance',
+    title: {
+      ar: 'تحسين أداء المواقع',
+      en: 'Web Performance Optimization',
+    },
+    description: {
+      ar: 'تحسين سرعة تحميل المواقع وتجربة المستخدم ومراجعة الأداء باستخدام Lighthouse.',
+      en: 'Improving website loading speed and user experience using Lighthouse performance audits.',
+    },
+    tech: ['Lighthouse', 'Performance', 'Accessibility'],
+  },
+
+  {
+    key: 'version-control',
+    title: {
+      ar: 'إدارة إصدارات الكود',
+      en: 'Version Control & Collaboration',
+    },
+    description: {
+      ar: 'تنظيم الكود وتتبع التعديلات وإدارة المشاريع باستخدام Git وGitHub.',
+      en: 'Managing code changes, organizing development workflows, and maintaining projects using Git and GitHub.',
+    },
+    tech: ['Git', 'GitHub', 'Version Control'],
+  },
 ]
+

@@ -7,7 +7,7 @@ import LocalTime from './LocalTime'
 import Magnetic from './Magnetic'
 import RollText from './RollText'
 
-const pages = ['about', 'projects', 'skills', 'resume', 'contact']
+const pages = ['about', 'projects', 'skills',  'contact']
 
 export default function Footer() {
   const { t, tx, to, num } = useLanguage()

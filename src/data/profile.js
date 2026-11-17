@@ -1,37 +1,61 @@
-// Personal and contact details. Rendered across the site (hero, about,
-// contact, footer, resume) so a change here shows up everywhere.
+
+// Personal and contact details.
+// Rendered across the site (hero, about, contact, footer, resume).
 
 export const profile = {
-  photo: '/erfan-mohammadi.jpg',
-  initials: 'EM',
+  photo: '/public/portfolio/mm.jpeg',
+  initials: 'MY',
 
-  name: { fa: 'عرفان محمدی', en: 'Erfan Mohammadi', de: 'Erfan Mohammadi' },
-  role: {
-    fa: 'توسعه‌دهنده‌ی بک‌اند پایتون (Django) و کارشناس پایگاه داده (SQL Server)',
-    en: 'Python Backend Developer (Django) & Database Specialist (MS SQL Server)',
-    de: 'Python Backend-Entwickler (Django) & Datenbank-Spezialist (MS SQL Server)',
+  name: {
+    ar: 'محمود يسري',
+    en: 'Mahmoud Yosary',
   },
-  location: { fa: 'تهران، ایران', en: 'Tehran, Iran', de: 'Teheran, Iran' },
 
-  email: 'erfan.mohammadi.alv77@gmail.com',
-  phone: '+989377747217',
-  phoneDisplay: '+98 937 774 7217',
+  role: {
+    ar: 'مطور واجهات أمامية',
+    en: 'Frontend Developer',
+  },
+
+  location: {
+    ar: 'فاقوس، مصر',
+    en: 'Faqus, Egypt',
+  },
+
+  email: 'mahmoudyosary74@gmail.com',
+
+  phone: '01024823098',
+  phoneDisplay: '010 2482 3098',
 
   company: {
-    name: { fa: 'هوشیوا', en: 'Houshiva', de: 'Houshiva' },
-    url: 'https://houshiva.ir',
+    name: {
+      ar: '',
+      en: '',
+    },
+    url: '',
   },
 
   links: {
-    github: 'https://github.com/erfanmohammadi1998',
-    linkedin: 'https://www.linkedin.com/in/erfan-mohammadi77/',
-    website: 'https://erfanmohammadi.ir',
-    houshiva: 'https://houshiva.ir',
+    github: 'https://github.com/Mahmoud125y',
+    linkedin: 'https://www.linkedin.com/in/mahmoud-yosary-166296377',
+    whatsapp: '201024823098',
+
+    // website: '',
+
   },
 
-  // Downloadable CVs. The Persian site offers the English one.
+  // Downloadable CVs
   cv: {
-    en: '/cv/Erfan_Mohammadi_CV_EN.pdf',
-    de: '/cv/Erfan_Mohammadi_Lebenslauf_DE.pdf',
+    // ar: '',
+    en: '',
   },
-}
+};
+
+
+
+
+
+
+
+
+
+

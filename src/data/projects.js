@@ -5,113 +5,85 @@
 // keyed by slug, so editing text never means touching this file. `name` is
 // the English product name houshiva shows under the Persian title (if any).
 
-import fa from './projects.fa'
-import en from './projects.en'
-import de from './projects.de'
 
-const copy = { fa, en, de }
 
 export const categories = ['all', 'website', 'software', 'management-system', 'dashboard']
 
 const img = (name) => `/portfolio/${name}.webp`
 
+
+
+
 export const projects = [
-  {
-    slug: 'avana-language-academy',
-    category: 'management-system',
-    name: 'Avana',
-    featured: true,
-    cover: img('avana-1'),
-    gallery: ['avana-2', 'avana-3', 'avana-4', 'avana-5', 'avana-6', 'avana-7'].map(img),
-    tech: ['Django', 'DRF', 'JWT', 'React', 'Chart.js', 'ReportLab'],
+
+{
+  slug: 'movies-website',
+  category: 'website',
+  name: 'Movies Website',
+  description: {
+    en: 'A movie website where users can explore movies, browse different categories, and discover details about available films.',
+    ar: 'موقع للأفلام يتيح للمستخدمين استكشاف الأفلام وتصفح التصنيفات المختلفة والتعرف على تفاصيل الأعمال السينمائية.',
   },
+  featured: true,
+  cover: '/public/movfix.png',
+  live: 'https://mahmoud125y.github.io/Dark-team-1/',
+  tech: [],
+},
   {
-    slug: 'rangnama-paint-visualizer',
-    category: 'software',
-    name: 'Rangnama',
-    featured: true,
-    cover: img('rangnama-1'),
-    gallery: [img('rangnama-2')],
-    tech: ['Python', 'FastAPI', 'PyTorch', 'Mask2Former', 'SAM', 'OpenCV', 'JavaScript', 'Docker'],
-  },
-  {
-    slug: 'market-intelligence-platform',
-    category: 'dashboard',
-    name: 'Market Intelligence Platform',
-    featured: true,
-    cover: img('market-radar-1'),
-    gallery: ['market-radar-2', 'market-radar-3', 'market-radar-4', 'market-radar-5', 'market-radar-6'].map(img),
-    tech: ['Django', 'DRF', 'PostgreSQL', 'Celery', 'Redis', 'React', 'TypeScript', 'Docker'],
-  },
-  {
-    slug: 'karnama-job-search',
-    category: 'software',
-    name: 'Karnama',
-    featured: true,
-    cover: img('karnama-1'),
-    gallery: ['karnama-2', 'karnama-3', 'karnama-4', 'karnama-5'].map(img),
-    tech: ['React', 'Vite', 'Django', 'DRF', 'PWA'],
-  },
-  {
-    slug: 'houshiva-asset',
-    category: 'management-system',
-    name: 'Houshiva Track',
-    featured: true,
-    cover: img('houshiva-asset-1'),
-    gallery: ['houshiva-asset-2', 'houshiva-asset-3', 'houshiva-asset-4', 'houshiva-asset-5', 'houshiva-asset-6'].map(img),
-    tech: ['Django', 'DRF', 'React', 'TypeScript', 'PostgreSQL'],
-  },
-  {
-    slug: 'rezumeban-ats',
-    category: 'management-system',
-    name: 'Rezumeban',
-    featured: true,
-    cover: img('rezumeban-1'),
-    gallery: ['rezumeban-2', 'rezumeban-3', 'rezumeban-4', 'rezumeban-5', 'rezumeban-6'].map(img),
-    tech: ['Django', 'DRF', 'JWT', 'React', 'Vite', 'Tailwind CSS'],
-  },
-  {
-    slug: 'ticket-management-system',
-    category: 'software',
-    name: 'Ticket Management System',
-    cover: img('ticket-1'),
-    gallery: ['ticket-2', 'ticket-3', 'ticket-4', 'ticket-5'].map(img),
-    tech: ['Django', 'DRF', 'JWT', 'SQL Server', 'React', 'Tailwind CSS'],
-  },
-  {
-    slug: 'management-dashboard-analytics',
-    category: 'dashboard',
-    name: null,
-    cover: img('management-dashboard'),
-    gallery: [],
-    tech: ['SQL Server', 'SSIS', 'T-SQL', 'Power BI'],
-  },
-  {
-    slug: 'document-management',
-    category: 'software',
-    name: null,
-    cover: img('document-management'),
-    gallery: [],
-    tech: ['Django', 'PostgreSQL', 'OCR', 'React'],
-  },
-  {
-    slug: 'school-management',
-    category: 'management-system',
-    name: null,
-    cover: img('school-management'),
-    gallery: [],
-    tech: ['Python'],
-  },
-  {
-    slug: 'tidaland-pet-shop',
+    slug: 'electronics-store',
     category: 'website',
-    name: 'Tidaland',
-    cover: img('tidaland'),
-    gallery: [],
-    live: 'https://github.com/erfanmohammadi1998/tidaland-pet-shop',
-    tech: ['HTML5', 'CSS3'],
+    name: 'Electronics Store',
+    description: {
+      en: 'An online electronics shopping platform where users can explore electronic products and browse different categories.',
+      ar: 'متجر إلكتروني متخصص في المنتجات الإلكترونية، يتيح للمستخدمين استكشاف المنتجات وتصفح الأقسام المختلفة.',
+    },
+    featured: true,
+    cover: '/public/Mshoponline.png',
+    live: 'https://mahmoud125y.github.io/Online-Shop/#',
+    tech: [],
   },
-]
+
+  {
+    slug: 'ecommerce-website',
+    category: 'website',
+    name: 'E-Commerce Website',
+    description: {
+      en: 'A modern e-commerce website where users can browse products, explore different categories, and enjoy a smooth online shopping experience.',
+      ar: 'موقع تجارة إلكترونية يتيح للمستخدمين تصفح المنتجات واستكشاف الأقسام المختلفة والاستمتاع بتجربة تسوق سهلة.',
+    },
+    featured: true,
+    cover: '/public/projecteccomerce.png',
+    live: 'https://mahmoud125y.github.io/bravo/index.html',
+    tech: [],
+  },
+  {
+    slug: 'graphic-design-portfolio',
+    category: 'website',
+    name: 'Graphic Design Portfolio',
+    description: {
+      en: 'A creative portfolio website showcasing graphic design projects, visual identity, and creative work through a clean and modern layout.',
+      ar: 'موقع بورتفوليو إبداعي لعرض أعمال التصميم الجرافيكي والهويات البصرية والمشاريع الفنية بتصميم عصري.',
+    },
+    featured: false,
+    cover:'/public/portfolioclient.png',
+    live: 'https://mahmoud125y.github.io/portfolio-1/',
+    tech: [],
+  },
+  {
+    slug: 'bughunt',
+    category: 'software',
+    name: 'BugHunt',
+    description: {
+      en: 'An interactive platform designed to help developers identify, analyze, and fix coding errors.',
+      ar: 'منصة تفاعلية تساعد المطورين على اكتشاف أخطاء الأكواد وتحليلها والعمل على تصحيحها.',
+    },
+    featured: false,
+    cover: '/public/bughuntt.png',
+    live: 'https://mahmoud125y.github.io/Dark-team-7/',
+    tech: [],
+  },
+
+];
 
 // Localized copy for one project; falls back to English, then Persian.
 export function projectCopy(project, lang) {
@@ -129,3 +101,6 @@ export function relatedProjects(project, count = 3) {
   const rest = others.filter((p) => p.category !== project.category)
   return [...same, ...rest].slice(0, count)
 }
+
+// ===============================================================================
+

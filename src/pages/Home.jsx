@@ -17,15 +17,35 @@ import Magnetic from '../components/Magnetic'
 import LocalTime from '../components/LocalTime'
 import Icon from '../components/Icon'
 import RollText from '../components/RollText'
+const cv = '/cv/CV.pdf'
 
-const bandTop = ['Python', 'Django', 'SQL Server', 'REST API', 'PostgreSQL', 'React', 'Docker', 'T-SQL']
-const bandBottom = ['Celery', 'Redis', 'Power BI', 'SSIS', 'Git', 'FastAPI', 'Crystal Reports', 'OpenCV']
+const bandTop = [
+  'HTML5',
+  'CSS3',
+  'JavaScript',
+  'React.js',
+  'Responsive Design',
+  'CSS Flexbox',
+  'CSS Grid',
+  'REST API',
+]
+
+const bandBottom = [
+  'Git',
+  'GitHub',
+  'UI/UX Implementation',
+  'DOM Manipulation',
+  'Cross-Browser Compatibility',
+  'Web Accessibility',
+  'VS Code',
+  'Performance Optimization',
+]
 
 export default function Home() {
   const { lang, t, tx, to, num } = useLanguage()
   const featured = projects.filter((p) => p.featured)
   const current = experience.filter((e) => e.current)
-  const cv = lang === 'de' ? profile.cv.de : profile.cv.en
+  // const cv = lang === 'de' ? profile.cv.de : profile.cv.en
 
   return (
     <>
@@ -218,9 +238,17 @@ function Hero({ cv }) {
                 <RollText>{t('hero.ctaTalk')}</RollText>
               </Link>
             </Magnetic>
-            <a href={cv} className="link-underline hero-cv" download>
+            {/* <a href={cv} className="link-underline hero-cv" download>
               <Icon name="download" size={16} /> {t('hero.ctaCv')}
-            </a>
+            </a> */}
+            <a
+  href="/cv/CV.pdf"
+  className="link-underline hero-cv"
+  download="CV.pdf"
+>
+  <Icon name="download" size={16} />
+  {t('hero.ctaCv')}
+</a>
           </div>
         </div>
 
@@ -244,9 +272,17 @@ function Hero({ cv }) {
             </span>
           </Link>
 
-          <span className="float-chip c1" dir="ltr"><Icon name="database" size={14} /> SQL Server</span>
-          <span className="float-chip c2" dir="ltr"><Icon name="server" size={14} /> Django</span>
-          <span className="float-chip c3" dir="ltr"><Icon name="layers" size={14} /> 15+ ERP modules</span>
+ <span className="float-chip c1" dir="ltr">
+  <Icon name="code" size={14} /> React.js
+</span>
+
+<span className="float-chip c2" dir="ltr">
+  <Icon name="monitor" size={14} /> Responsive UI
+</span>
+
+<span className="float-chip c3" dir="ltr">
+  <Icon name="layers" size={14} /> 6+ Web Projects
+</span>
         </div>
       </div>
 
